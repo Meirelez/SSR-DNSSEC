@@ -1,0 +1,35 @@
+$TTL 3D
+@       IN      SOA   ns.example.edu. admin.example.edu. (
+                2008111001
+                8H
+                2H
+                4W
+                1D)
+
+; Records for this nameserver (you need to make changes)
+@               IN   NS    ns.example.edu.
+ns.example.edu. IN   A     10.9.0.65
+
+; IP addresses for the hostnames in the example.du domain
+@       IN      A     1.2.3.5
+www     IN      A     1.2.3.5
+xyz     IN      A     1.2.3.6
+*       IN      A     1.2.3.7
+;ksk
+example.edu. IN DNSKEY 257 3 13 wceHnWC9fku9WYBGA6w1/CoBrDZGHCzI1Q5uIfdje4nL+tqEvH0KlKPA /lvlSxJMfjXYdydWEkAmPWi2gc6I+A==
+
+;zsk
+example.edu. IN DNSKEY 256 3 13 i1+nFE/eUIFaIalI/0dau/l9Mnp3y4fGdO+n5cnHnv1G1agGZyIbvNeU feoIGHzjKP6m7kLXpisCASl/OW82og==
+
+;colliding keys
+example.edu. IN DNSKEY 256 3 13 xvQta2cdz4EP/35TMRlH0XAItwaKem4jGJEEFgqyjpGk/LD9BecDc8xf 578kQpTKzEupQln5ZyO24d8q3rYCWQ==
+example.edu. IN DNSKEY 256 3 13 VIOoGa2okst4yv23ceEVuiaQ6c7S2irGDE5RMAssDDB2LELj/XgDE4eJ e2HkNZa1EKQ36SwMdHJnCccXLP5IdQ==
+example.edu. IN DNSKEY 256 3 13 NHSlv9LTWZM+Nl2gX/JJ2/H/CjQZz2mpuwlO67wVUU4W/YcCvcWj6Dsc 3dL41ry94yVtm2C6hlu0yLHb5IBNqQ==
+example.edu. IN DNSKEY 256 3 13 jA/4+knk9fAwhfKpK96dnx4XiQjrq4D3sCRTMY3ti0zRo4U3AmSTWi2a xBCojQNexZA5h2bylvGmOYylEUnU5w==
+example.edu. IN DNSKEY 256 3 13 LwNYWNb08Rv6GWRBto8A7ZNQy+uHUEeQBbvWwT0EALJOQ0vIGdM7G+IE d3dnkQjWUzmj5zyH12FrxgipVJxHlA==
+example.edu. IN DNSKEY 256 3 13 Qb9Vd0Smlscy62Xq72/aDLUWiAAEiiF8Iq87mt94BldREDn4zu2dL14S Wv1s8yIK3QR5pJFOSKlIo69Pqqzzeg==
+example.edu. IN DNSKEY 256 3 13 4V8Imsyd5DeVUSIyQn/1o5VZ630+ACp2BiJTxp62qtW8+7DbVWOOqPeY PMviloFh8D16hqa1k3LmFSIUwkERSw==
+example.edu. IN DNSKEY 256 3 13 Bm3hpXHJXk0YgN7b1b1JpQ0OvcG+3DRf8v2rN5aG6vtWI8q+zRv7RcFX LtBWY3+CWbMF+mNUIbqujS5lx2CdDg==
+example.edu. IN DNSKEY 256 3 13 yiOPDsmc2hJZn8onvCgxEWcqWGRtS9M6aQprdMUxFod2LUqdnwq/XLJO eRbuzzleq6cwZPbtFcy6TkiGiPzcjw==
+example.edu. IN DNSKEY 256 3 13 KOSI5f8LbuJHV1Oz8eNwC5oeKnmVz0+vcbzG7DHUbQAeeGinUgPzERXa gvYsWfIR/hWJpgs8jqBKZr6ZpOCQ6w==
+example.edu. IN DNSKEY 256 3 13 rJfPhxZR2nGYBvuiE+HOjTql97sWQ2s9jmUuVjDRcgX7VBjZR/GxcwJC oYJtDV7qnNUk3w2mvKvDRaSVDyYLVg==
