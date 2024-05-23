@@ -7,7 +7,7 @@ while true; do
 
     for i in {1..200}; do
 
-        #KEYTAG=$(dnssec-keygen -a RSASHA256 -b 2048 -f KSK ${KEY_ZONE} | cut -f3 -d'+')
+        #KEYTAG=$(dnssec-keygen -a ECDSAP384SHA384 -b 1024  ${KEY_ZONE} | cut -f3 -d'+')
         KEYTAG=$(dnssec-keygen -a ECDSAP256SHA256 -b 1024  ${KEY_ZONE} | cut -f3 -d'+')
         if [[ $KEYTAG = *${DESIRED_KEYTAG}* ]]; then
             echo "Key with desired tag has been generated."
