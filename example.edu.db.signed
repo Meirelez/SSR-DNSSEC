@@ -1,0 +1,150 @@
+; File written on Thu May 23 11:07:17 2024
+; dnssec_signzone version 9.16.48-Ubuntu
+example.edu.		259200	IN SOA	ns.example.edu. admin.example.edu. (
+					2008111001 ; serial
+					28800      ; refresh (8 hours)
+					7200       ; retry (2 hours)
+					2419200    ; expire (4 weeks)
+					86400      ; minimum (1 day)
+					)
+			259200	RRSIG	SOA 13 2 259200 (
+					20501231000000 20240523140717 34345 example.edu.
+					EteSSlZoM4dTx2RIyHBdH1zzNAy29BPM80Lj
+					rIRdsf22/xZrokWYf3ri6J/CQ0VLniFNBCy6
+					MaKFzRKvnyJNbA== )
+			259200	NS	ns.example.edu.
+			259200	RRSIG	NS 13 2 259200 (
+					20501231000000 20240523140717 34345 example.edu.
+					XZJ6QHBZQM6NdqDDks2/L6yoNAXlljrS4eJH
+					jO9O5coGHNQhR5nrQRBuLO04krGDajgxpc6Z
+					DeVQWRUBwqVhCQ== )
+			259200	A	1.2.3.5
+			259200	RRSIG	A 13 2 259200 (
+					20501231000000 20240523140717 34345 example.edu.
+					71WzuEbOySJre9h69k177gK78NpwhqFvWNyT
+					172vuIU1rUIIKdsETEZnIA8t0KwbJpVXa/35
+					PgomkavVFOK+Bw== )
+			86400	NSEC	*.example.edu. A NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 13 2 86400 (
+					20501231000000 20240523140717 34345 example.edu.
+					u/6HuX33q0GF1mFsLOgcO0m1mFU9kYWuBhwi
+					HMBmDDmV1yogTYCFd110KrVL6Lk+fRDF4g3E
+					wPM7V2msHLmmzA== )
+			259200	DNSKEY	256 3 13 (
+					Bm3hpXHJXk0YgN7b1b1JpQ0OvcG+3DRf8v2r
+					N5aG6vtWI8q+zRv7RcFXLtBWY3+CWbMF+mNU
+					IbqujS5lx2CdDg==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					KOSI5f8LbuJHV1Oz8eNwC5oeKnmVz0+vcbzG
+					7DHUbQAeeGinUgPzERXagvYsWfIR/hWJpgs8
+					jqBKZr6ZpOCQ6w==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					LwNYWNb08Rv6GWRBto8A7ZNQy+uHUEeQBbvW
+					wT0EALJOQ0vIGdM7G+IEd3dnkQjWUzmj5zyH
+					12FrxgipVJxHlA==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					NHSlv9LTWZM+Nl2gX/JJ2/H/CjQZz2mpuwlO
+					67wVUU4W/YcCvcWj6Dsc3dL41ry94yVtm2C6
+					hlu0yLHb5IBNqQ==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					Qb9Vd0Smlscy62Xq72/aDLUWiAAEiiF8Iq87
+					mt94BldREDn4zu2dL14SWv1s8yIK3QR5pJFO
+					SKlIo69Pqqzzeg==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					VIOoGa2okst4yv23ceEVuiaQ6c7S2irGDE5R
+					MAssDDB2LELj/XgDE4eJe2HkNZa1EKQ36SwM
+					dHJnCccXLP5IdQ==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					i1+nFE/eUIFaIalI/0dau/l9Mnp3y4fGdO+n
+					5cnHnv1G1agGZyIbvNeUfeoIGHzjKP6m7kLX
+					pisCASl/OW82og==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					jA/4+knk9fAwhfKpK96dnx4XiQjrq4D3sCRT
+					MY3ti0zRo4U3AmSTWi2axBCojQNexZA5h2by
+					lvGmOYylEUnU5w==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					rJfPhxZR2nGYBvuiE+HOjTql97sWQ2s9jmUu
+					VjDRcgX7VBjZR/GxcwJCoYJtDV7qnNUk3w2m
+					vKvDRaSVDyYLVg==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					xvQta2cdz4EP/35TMRlH0XAItwaKem4jGJEE
+					FgqyjpGk/LD9BecDc8xf578kQpTKzEupQln5
+					ZyO24d8q3rYCWQ==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					yiOPDsmc2hJZn8onvCgxEWcqWGRtS9M6aQpr
+					dMUxFod2LUqdnwq/XLJOeRbuzzleq6cwZPbt
+					Fcy6TkiGiPzcjw==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	256 3 13 (
+					4V8Imsyd5DeVUSIyQn/1o5VZ630+ACp2BiJT
+					xp62qtW8+7DbVWOOqPeYPMviloFh8D16hqa1
+					k3LmFSIUwkERSw==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34345
+			259200	DNSKEY	257 3 13 (
+					wceHnWC9fku9WYBGA6w1/CoBrDZGHCzI1Q5u
+					Ifdje4nL+tqEvH0KlKPA/lvlSxJMfjXYdydW
+					EkAmPWi2gc6I+A==
+					) ; KSK; alg = ECDSAP256SHA256 ; key id = 54338
+			259200	RRSIG	DNSKEY 13 2 259200 (
+					20501231000000 20240523140717 54338 example.edu.
+					NwDPvAgVeINZ/ay6DgWg0MC9aek8cDSgTfzq
+					hv7bOpJSp8eMH/8Gki+4rtFZUTDW8rggpAoA
+					TBRO0hN8ILfNJQ== )
+www.example.edu.	259200	IN A	1.2.3.5
+			259200	RRSIG	A 13 3 259200 (
+					20501231000000 20240523140717 34345 example.edu.
+					Q9X7jaJ2+vMvvToK/mbg7uProqLzxVu+bZae
+					ZW99T1Ps6+3P7z8zawfE/S0IIy8/yXyUZw2p
+					y8zSA8Y3lIt8mA== )
+			86400	NSEC	xyz.example.edu. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20501231000000 20240523140717 34345 example.edu.
+					0pSX4gz2yRwI/KI3aIS4nXUVNK96heVdpHgA
+					YlygQ6zf8+m2r7T8wofmj+qaTOiqUG+vrAuL
+					Mu6xlgfL/MjaOA== )
+ns.example.edu.		259200	IN A	10.9.0.65
+			259200	RRSIG	A 13 3 259200 (
+					20501231000000 20240523140717 34345 example.edu.
+					TGD7W41AmtJnEPmvgZatkQ3IauRYoUeC5NzP
+					uAJhB83eYBC4LGxlcXnZzePrdHeBpvTIDlz5
+					mQKUwa6CTInIUA== )
+			86400	NSEC	www.example.edu. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20501231000000 20240523140717 34345 example.edu.
+					bwoy62RgD83r2WO40IjZ7hs0NSXimGkXcERU
+					/ZpVxGSMpa0IFfUOOYcXkMVQbvDJ0pkEWHol
+					DfFzMz1+sxCC8w== )
+*.example.edu.		259200	IN A	1.2.3.7
+			259200	RRSIG	A 13 2 259200 (
+					20501231000000 20240523140717 34345 example.edu.
+					iqWMO2GAvQayDpfZ4dcs/+4yMHYqJ9CIK88w
+					sZYAo0liE6t5r7loZSE2KgJfbh3KU4/7F+Vk
+					CWM6h1azk5/2fg== )
+			86400	NSEC	ns.example.edu. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 2 86400 (
+					20501231000000 20240523140717 34345 example.edu.
+					4T61xieLjx1NauZlvINDolCTUQuBlGx3sUEF
+					EJmQpu1V0YLJu8XhkN7CPEDawv1lh/QuRsjF
+					JFAEMDSGgqHOYQ== )
+xyz.example.edu.	259200	IN A	1.2.3.6
+			259200	RRSIG	A 13 3 259200 (
+					20501231000000 20240523140717 34345 example.edu.
+					MPghcVQHjJ9jGIYWNKE4c7/o/vDNVyqy5q3s
+					mx7dLrSAVOUwOheO0S4k2wmJMiJq37L+ra+r
+					zwxeKVTcrvNsuA== )
+			86400	NSEC	example.edu. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20501231000000 20240523140717 34345 example.edu.
+					OPT5vhAmKJTPQZlTjAKD3fGYA0yPxb8NV/Uf
+					prLnf1/cs3waG/TvjGXbfSfyf6drODaXGuVY
+					05++hBT+8f2lVA== )
